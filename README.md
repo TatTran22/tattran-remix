@@ -27,6 +27,12 @@ npm run build
 npm run start
 ```
 
+```sh
+pnpm drizzle:up
+pnpm drizzle:generate
+pnpm db:migrate:local
+```
+
 ## Deployment
 
 > [!WARNING]  
