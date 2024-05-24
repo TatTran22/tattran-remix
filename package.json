@@ -16,7 +16,10 @@
     "drizzle:generate": "drizzle-kit generate",
     "drizzle:up": "drizzle-kit up",
     "db:migrate:local": "pnpm run drizzle:generate && pnpm dlx wrangler d1 migrations apply tattran-remix --local",
-    "db:migrate": "pnpm run drizzle:generate && pnpm dlx wrangler d1 migrations apply tattran-remix"
+    "db:migrate": "pnpm run drizzle:generate && pnpm dlx wrangler d1 migrations apply tattran-remix",
+    "d1:execute:local": "pnpm dlx wrangler d1 execute tattran-remix --local --file=./app/drizzle/migrations/0000_petite_freak.sql",
+    "d1:execute": "pnpm dlx wrangler d1 execute tattran-remix --remote --file=./app/drizzle/migrations/0000_petite_freak.sql",
+    "wrangler:dev": "wrangler dev"
   },
   "dependencies": {
     "@remix-run/cloudflare": "^2.9.2",
