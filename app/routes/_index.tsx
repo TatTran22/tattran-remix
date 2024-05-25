@@ -56,7 +56,7 @@ export default function Index() {
 
           <p className=' leading-normal text-muted-foreground text-md md:text-lg sm:leading-8'>
             As a passionate web developer, I&apos;ve helped clients boost
-            conversions by 30% using powerful frameworks like PHP, Laravel,
+            conversions by 50% using powerful frameworks like PHP, Laravel,
             React, and Shopify. I thrive on tackling complex challenges and
             exceeding expectations with clean, efficient code. My relentless
             pursuit of innovation combined with a love for problem-solving fuels
