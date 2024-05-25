@@ -3,6 +3,11 @@ import { TypeAnimation } from 'react-type-animation';
 import { siteConfig } from '~/config/site';
 // import { getGitHubStars } from '~/services/github';
 import heroImage from '~/assets/images/me.png';
+import { LinksFunction } from '@remix-run/cloudflare';
+
+export const links: LinksFunction = () => [
+  { rel: 'preload', as: 'image', href: heroImage },
+];
 
 // export const loader = async () => {
 //   const starts = await getGitHubStars();
