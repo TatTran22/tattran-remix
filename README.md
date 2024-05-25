@@ -1,4 +1,4 @@
-# Welcome to Remix + Vite!
+# Welcome to Remix + Vite + Drizzle + Cloudflare D1!
 
 📖 See the [Remix docs](https://remix.run/docs) and the [Remix Vite docs](https://remix.run/docs/en/main/guides/vite) for details on supported features.
 
@@ -31,6 +31,7 @@ npm run start
 pnpm drizzle:up
 pnpm drizzle:generate
 pnpm db:migrate:local
+pnpm db:execute:local
 ```
 
 ## Deployment
@@ -49,6 +50,13 @@ Then, deploy your app to Cloudflare Pages:
 
 ```sh
 npm run deploy
+```
+
+migrate db
+
+```sh
+pnpm db:migrate
+pnpm d1:execute
 ```
 
 [bindings]: https://developers.cloudflare.com/pages/functions/bindings/

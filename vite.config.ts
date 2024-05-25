@@ -1,3 +1,5 @@
+// import tailwindcss from '@tailwindcss/vite'
+
 import {
   vitePlugin as remix,
   cloudflareDevProxyVitePlugin as remixCloudflareDevProxy,
@@ -5,9 +7,11 @@ import {
 import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 
+import { getLoadContext } from "./load-context";
+
 export default defineConfig({
   plugins: [
-    remixCloudflareDevProxy(),
+    remixCloudflareDevProxy({ getLoadContext }),
     remix({
       future: {
         v3_fetcherPersist: true,
@@ -16,5 +20,6 @@ export default defineConfig({
       },
     }),
     tsconfigPaths(),
+    // tailwindcss()
   ],
 });
