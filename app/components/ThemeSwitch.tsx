@@ -1,15 +1,16 @@
 import Switch from 'react-switch';
 import { Icon } from '@iconify/react';
 import { Theme, useTheme } from 'remix-themes';
+import { useCallback } from 'react';
 
 const ThemSwitch = () => {
   const [theme, setTheme] = useTheme();
 
   const darkTheme = theme === 'dark';
 
-  const toggleTheme = () => {
+  const toggleTheme = useCallback(() => {
     setTheme((prevTheme) => (prevTheme === 'dark' ? Theme.LIGHT : Theme.DARK));
-  };
+  }, [setTheme]);
 
   return (
     <Switch
