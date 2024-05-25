@@ -18,12 +18,12 @@ export default function Index() {
   // const { stars } = useLoaderData<typeof loader>();
   return (
     <main>
-      <section className='container space-y-6 pb-8 md:pb-12 grid md:grid-cols-2 min-h-screen'>
+      <section className='container mt-20 md:mt-0 grid md:grid-cols-2 min-h-screen'>
         <div className='relative flex items-center justify-center flex-col gap-8'>
           <img
             src={heroImage}
             alt='Tat Tran'
-            className='rounded-full w-80 h-80'
+            className='rounded-full w-80 h-80 object-cover shadow-lg'
           />
           <p className='leading-normal text-muted-foreground sm:text-lg sm:leading-8'>
             <TypeAnimation
