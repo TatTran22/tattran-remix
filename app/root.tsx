@@ -4,7 +4,6 @@ import {
   MetaFunction,
 } from '@remix-run/cloudflare';
 import {
-  Link,
   Links,
   Meta,
   Outlet,
@@ -25,8 +24,6 @@ import {
 import { themeSessionResolver } from '~/sessions/theme.server';
 import { MainNav } from './components/main-nav';
 import { marketingConfig } from './config/marketing';
-import { buttonVariants } from './components/ui/button';
-import { cn } from './lib/utils';
 import { SiteFooter } from './components/site-footer';
 
 export const links: LinksFunction = () => [
@@ -78,7 +75,7 @@ export function App() {
       </head>
       <body>
         <div className='flex min-h-screen flex-col'>
-          <header className='container z-40 bg-background'>
+          <header className='container z-40 bg-background fixed'>
             <div className='flex h-20 items-center justify-between py-6'>
               <MainNav items={marketingConfig.mainNav} />
             </div>

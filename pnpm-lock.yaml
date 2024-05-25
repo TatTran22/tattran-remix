@@ -44,9 +44,6 @@ importers:
       isbot:
         specifier: ^4.4.0
         version: 4.4.0
-      isomorphic-base64:
-        specifier: ^1.0.2
-        version: 1.0.2
       lucide-react:
         specifier: ^0.379.0
         version: 0.379.0(react@18.3.1)
@@ -3078,9 +3075,6 @@ packages:
 
   isexe@2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
-
-  isomorphic-base64@1.0.2:
-    resolution: {integrity: sha512-pQFyLwShVPA1Qr0dE1ZPguJkbOsFGDfSq6Wzz6XaO33v74X6/iQjgYPozwkeKGQxOI1/H3Fz7+ROtnV1veyKEg==}
 
   iterator.prototype@1.1.2:
     resolution: {integrity: sha512-DR33HMMr8EzwuRL8Y9D3u2BMj8+RqSE850jfGu59kS7tbmPLzGkZmVSfyCFSDxuZiEY6Rzt3T2NA/qU+NwVj1w==}
@@ -7764,8 +7758,6 @@ snapshots:
   isbot@4.4.0: {}
 
   isexe@2.0.0: {}
-
-  isomorphic-base64@1.0.2: {}
 
   iterator.prototype@1.1.2:
     dependencies:

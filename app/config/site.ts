@@ -12,11 +12,8 @@ export const siteConfig: SiteConfig = {
   },
   githubRepo: 'tattran22/tattran-remix',
   basicTitles: [
-    'Web Developer',
-    'React Developer',
-    'Laravel Developer',
-    'Coffee Drinker',
-    'Coding Enthusiast',
-    'Dota 2 Player',
+    'Full-Stack Developer (React & Laravel)',
+    'Building Innovative Web Solutions',
+    'Building Highly Scalable Applications',
   ],
 };
