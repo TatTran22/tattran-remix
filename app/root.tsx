@@ -6,6 +6,7 @@ import {
   Scripts,
   ScrollRestoration,
   useLoaderData,
+  useRouteError,
 } from '@remix-run/react';
 import stylesheet from '~/styles/tailwind.css?url';
 import clsx from 'clsx';
@@ -64,5 +65,23 @@ export default function AppWithProviders() {
     <ThemeProvider specifiedTheme={data.theme} themeAction='/action/set-theme'>
       <App />
     </ThemeProvider>
+  );
+}
+
+export function ErrorBoundary() {
+  const error = useRouteError();
+  console.error(error);
+  return (
+    <html lang='en'>
+      <head>
+        <title>Oh no!</title>
+        <Meta />
+        <Links />
+      </head>
+      <body>
+        {/* add the UI you want your users to see */}
+        <Scripts />
+      </body>
+    </html>
   );
 }
